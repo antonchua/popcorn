@@ -1,0 +1,49 @@
+@import "src/styles/styles";
+.list__item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  padding: 20px 0;
+  border-bottom: .2px solid #3a3a3a;
+  align-items: center;
+  color: $color-text;
+
+  p {
+    width: 35px;
+    height: 60px;
+    background-color: lightblue;
+    margin-left: 20px;
+  }
+
+  div {
+    padding-left: 25px;
+    align-self: end;
+    h3 {
+      font-size: 1.8rem;
+      letter-spacing: -1px;
+      margin-bottom: 10px;
+    }
+    ul {
+      display: flex;
+      font-size: 1.6rem;
+      li {
+        margin-right: 25px;
+      }
+    }
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    margin-right: 20px;
+    cursor: pointer;
+    background-color: $color-red-dark;
+    align-self: end;
+  }
+}
