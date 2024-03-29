@@ -1,7 +1,5 @@
 export const FoundResults = () => {
     return (
-        <div>
-            results
-        </div>
+    <div>Found number results</div>
     )
 }

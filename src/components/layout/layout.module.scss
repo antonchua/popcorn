@@ -1,7 +1,10 @@
+@import "src/styles/styles";
 .layout {
   display: grid;
   grid-template-rows: auto 1fr auto;
 
   width: 100%;
   height: 100%;
+  padding: 30px;
+  background-color: $color-background-900;
 }

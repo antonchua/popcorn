@@ -1,0 +1,28 @@
+@import "src/styles/styles";
+.input {
+  font-size: 1.8rem;
+  width: 38rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  color: $color-text;
+  background-color: $color-primary-light;
+  transition: all .5s;
+
+  &::placeholder {
+    color: $color-text;
+  }
+
+  &:focus {
+    transform: translateY(-3px);
+  }
+
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
