@@ -1,5 +1,5 @@
 import {FoundResults} from "../found-results/found-results";
-import {Input} from '../../ui/input/input'
+import {Input} from '../ui/input/input'
 import { BiCameraMovie } from "react-icons/bi";
 import styles from './header.module.scss'
 
