@@ -1,26 +1,36 @@
-import styles from './summary-item.module.scss'
 import { FaRegStar, FaStar } from 'react-icons/fa'
 import { IoMdTime } from 'react-icons/io'
+import { Button } from '../../../../ui/button/button'
+import { PopcornTypes } from '../../../../store/popcorn-types'
+import styles from './summary-item.module.scss'
 
-export const SummaryItem = () => {
+type SummaryItemType = {
+  item: PopcornTypes.RatedMovie
+}
+export const SummaryItem = ({ item }: SummaryItemType) => {
   return (
-    <li className={styles.list__item}>
-      <p>img</p>
+    <li className={styles.item}>
+      <img src={item.Poster} alt={item.Title} />
       <div>
-        <h3>Movie name</h3>
+        <h3>{item.Title}</h3>
         <ul>
           <li>
-            <FaRegStar style={{ color: 'gold' }} /> 0
+            <FaRegStar style={{ color: 'gold' }} />
+            <span> {item.imdbRating}</span>
           </li>
           <li>
-            <FaStar style={{ color: 'gold' }} /> 0
+            <FaStar style={{ color: 'gold' }} />
+            <span> {item.userRate}</span>
           </li>
           <li>
-            <IoMdTime style={{ color: 'orange' }} /> 0 min
+            <IoMdTime style={{ color: 'orange' }} />
+            <span> {item.Runtime}</span>
           </li>
         </ul>
       </div>
-      <button>x</button>
+      <Button type={'button'} cnButton={'remove'}>
+        x
+      </Button>
     </li>
   )
 }

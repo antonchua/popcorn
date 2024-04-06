@@ -1,0 +1,97 @@
+@import "src/styles/styles";
+
+.movieWrapper {
+  display: flex;
+  flex-direction: column;
+  color: $color-text-white;
+
+  .detailsContainer {
+   display: flex;
+   background-color: $color-background-100;
+   img {
+     width: 140px;
+     height: 210px;
+   }
+
+   .details__description {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     width: 100%;
+     margin-left: 20px;
+     font-size: 1.4rem;
+     h3 {
+       font-size: 2.2rem;
+     }
+     .description__rating {
+       display: flex;
+       align-items: center;
+
+       .description__star {
+         clip-path: polygon(50% 2.45%, 65.95% 33.07%, 100% 38.77%, 71.96% 62.15%, 80.9% 97.55%, 50% 76.86%, 19.1% 97.55%, 25.4% 62.15%, 0% 38.77%, 34.05% 33.07%);
+         background-color: gold;
+         width: 15px;
+         height: 15px;
+         margin-right: 10px;
+       }
+     }
+
+   }
+ }
+
+  .storyContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    align-items: center;
+    .userRating {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      background-color: $color-background-100;
+      border-radius: 10px;
+      &__stars {
+        width: 100%;
+        height: 50px;
+        padding: 0 5px;
+        color: gold;
+        display: flex;
+        gap: .3rem;
+        align-items: start;
+        div {
+          margin-left: 5px;
+          font-weight: bold;
+        }
+      }
+      &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 15px;
+        padding: 10px 0;
+        background-color: $color-primary;
+        cursor: pointer;
+        &:hover {
+          background-color: $color-primary-light;
+        }
+        div {
+          text-align: center;
+          font-weight: bold;
+          font-size: 1.5rem;
+          color: $color-text-white;
+        }
+      }
+    }
+
+    .storyDescription {
+      margin-top: 30px;
+      p {
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+        font-style: italic;
+      }
+    }
+  }
+}

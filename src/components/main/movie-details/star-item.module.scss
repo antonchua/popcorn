@@ -1,0 +1,19 @@
+.star {
+  display: flex;
+  align-items: center;
+  transition: all ease-out 2s;
+  svg {
+    transition: all ease-out 2s;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+
+}
+.active {
+  transition: all ease-out 2s;;
+  svg {
+    fill: gold;
+    transition: all ease-out 2s;
+  }
+}

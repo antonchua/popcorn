@@ -1,4 +1,4 @@
-@import "src/styles/styles";
+@import "../../styles/styles";
 .input {
   font-size: 1.8rem;
   width: 38rem;
@@ -6,12 +6,12 @@
   border: none;
   border-radius: 5px;
   outline: none;
-  color: $color-text;
+  color: $color-text-white;
   background-color: $color-primary-light;
   transition: all .5s;
 
   &::placeholder {
-    color: $color-text;
+    color: $color-text-white;
   }
 
   &:focus {

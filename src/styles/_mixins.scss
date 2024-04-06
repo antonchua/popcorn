@@ -1,5 +1,13 @@
+@import "variables";
+
 @mixin screen ($size) {
   @media (min-width: $size) {
     @content
   }
+}
+
+@mixin flex-centered() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

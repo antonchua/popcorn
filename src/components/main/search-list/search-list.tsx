@@ -1,7 +1,12 @@
-import styles from './search-list.module.scss'
+import {SearchItem} from './search-item/search-item'
+import { observer } from 'mobx-react-lite'
+import { movieApi } from '../../../api/movie-api'
 
-export const SearchList = () => {
+export const SearchList = observer(() => {
+
   return (
-    <div>search list</div>
+    <ul>
+      {movieApi.movieData?.map(item =>  <SearchItem key={item.imdbID} movie={item}/>)}
+    </ul>
   )
-}
+})
